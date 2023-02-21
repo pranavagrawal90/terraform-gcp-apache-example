@@ -16,7 +16,7 @@ resource "google_compute_firewall" "ssh_firewall" {
     protocol = "tcp"
     ports    = ["22"]
   }
-  source_ranges = [var.my_ip] # Not So Secure. Limit the Source Range
+  source_ranges = [var.my_ip]
   target_tags   = ["ssh-server"]
 }
 
