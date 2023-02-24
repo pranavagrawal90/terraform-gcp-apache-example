@@ -9,3 +9,7 @@ variable "instance_type" {
 variable "my_ip" {
   type = string
 }
+
+variable "project_name" {
+  type = string
+}
