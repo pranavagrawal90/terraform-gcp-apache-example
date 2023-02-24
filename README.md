@@ -9,15 +9,15 @@ terraform {
 
 provider "google" {
   project = <PROJECT_NAME>
-	region = "us-central1"
+  region = "us-central1"
 }
 
 
 module "apache2" {
-	source = "./terraform-gcp-apache-example"
-	vpc_name = "VPC_NAME"
-	instance_type = "INSTANCE_TYPE"
-	my_ip = "MY_OWN_IP_ADDRESS/32"
+  source = "./terraform-gcp-apache-example"
+  vpc_name = "VPC_NAME"
+  instance_type = "INSTANCE_TYPE"
+  my_ip = "MY_OWN_IP_ADDRESS/32"
 }
 
 output "public_ip" {
