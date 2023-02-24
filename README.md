@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-  project = "terraform-learnings-gcp"
+  project = <PROJECT_NAME>
 	region = "us-central1"
 }
 
