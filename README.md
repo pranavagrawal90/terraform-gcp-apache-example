@@ -15,8 +15,8 @@ provider "google" {
 
 module "apache2" {
 	source = "./terraform-gcp-apache-example"
-	vpc_name = "default"
-	instance_type = "f1-micro"
+	vpc_name = "VPC_NAME"
+	instance_type = "INSTANCE_TYPE"
 	my_ip = "MY_OWN_IP_ADDRESS/32"
 }
 
